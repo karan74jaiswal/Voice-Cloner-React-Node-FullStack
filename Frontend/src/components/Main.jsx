@@ -43,7 +43,7 @@ export function Main() {
   const handleSubmit = async function () {
     setIsLoading(true);
     console.log(inputVoice);
-    const { result } = await fetch(`http://localhost:3001/api/convert`, {
+    const { result } = await fetch(`https://voice-cloner-react-node-full-stack.vercel.app/api/convert`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
