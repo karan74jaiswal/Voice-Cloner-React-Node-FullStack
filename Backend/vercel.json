@@ -2,7 +2,7 @@
   "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
   "functions": {
     "api/*.js": {
-      "maxDuration": 180
+      "maxDuration": 60
     }
   },
   "headers": [
