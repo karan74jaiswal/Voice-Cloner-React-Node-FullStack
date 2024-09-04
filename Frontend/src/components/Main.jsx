@@ -16,9 +16,7 @@ import { FloatLabel } from "primereact/floatlabel";
 import { Dropdown } from "primereact/dropdown";
 import { useVoiceContext } from "./VoiceProvider";
 import { createClient } from "@supabase/supabase-js";
-// import voiceList from "../voiceData";
-// import { client } from "@gradio/client";
-// import Replicate from "replicate";
+
 
 const testListInfo = {};
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
