@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  background-color: rgb(23 23 23);
+}
+
+.App {
+  background-color: rgb(23 23 23);
+  min-height: 100vh;
+}
+
+nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.normal {
+  padding: 0;
+  height: 0;
+}
+
+.searchNav {
+  padding: 30px;
+}
+
+.logo {
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  color: #000000;
+  /* padding: 12px 20px; */
+  border-radius: 0.75rem;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnBack,
+.btnDownload {
+  padding: 12px 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.btnDownload {
+  display: flex;
+  gap: 5px;
+  cursor: auto;
+}
+.btnBack:hover {
+  background-color: rgb(93 138 237);
+}
+
+.retryBtn {
+  padding: 12px 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 25px; */
+}
+
+.message h1 {
+  font-size: 44px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.message h2 {
+  font-size: 16px;
+  color: rgb(186 186 186);
+  text-align: center;
+}
+
+input {
+  height: 55px;
+  padding: 15px;
+  font-size: 16px;
+  color: rgb(201 215 245);
+  background-color: rgb(32 36 44);
+  border: 2px solid transparent;
+  width: 42vw;
+  border-radius: 0.75rem;
+}
+
+@keyframes borderColor {
+  0% {
+    border-color: #edf1fb;
+  }
+
+  50% {
+    border-color: #1c60f6;
+  }
+}
+
+.animate-borderColor {
+  animation: borderColor 3s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+img {
+  height: 512px;
+  width: 512px;
+  border-radius: 0.75rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message img {
+  width: 120px;
+  height: 120px;
+}
+
+.upload-section {
+  background-color: #fff;
+  color: #000000;
+  width: 70%;
+  height: auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.upload-file-container {
+  border: 4px dashed rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative; /* Position the upload box relatively */
+}
+
+.upload-box {
+  display: flex;
+  padding: 35px 120px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure it fills the container */
+  border-radius: 5px;
+}
+.upload-box:hover {
+  background-color: rgb(93 138 237);
+}
+
+.upload-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.upload-message {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.upscaling-options-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 35px;
+  background-color: rgb(43, 46, 54);
+  padding: 18px;
+  border-radius: 0.75rem;
+}
+.list-player {
+  /* max-height: 50% !important; */
+}
+
+.list-body {
+  display: none !important;
+}
+.strategy-options {
+  text-transform: capitalize;
+}
+.strategy-options,
+.target-dimensions-options {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  border: 2px solid #edf1fb;
+  cursor: pointer;
+  border-radius: 0.75rem;
+}
+
+.strategy-options *,
+.target-dimensions-options * {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+}
+
+.active {
+  background-color: #fff;
+  color: #000000;
+}
+
+.strategy-options *:not(.active):hover,
+.target-dimensions-options *:not(.active):hover {
+  /* Your styles for .hover class */
+  background-color: rgb(23 23 23);
+}
+
+.upscale-btn {
+  padding: 12px 20px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 5px;
+  cursor: auto;
+}
+.upscale-btn:not([disabled]):hover {
+  background-color: rgb(93 138 237);
+  cursor: pointer; /* Set cursor to pointer only when not disabled */
+  /* Your styles for .hover class */
+}
+
+.btnDownload:not([disabled]):hover {
+  background-color: rgb(93 138 237);
+  cursor: pointer; /* Set cursor to pointer only when not disabled */
+  /* Your styles for .hover class */
+}
+
+.bl {
+  color: #424b5a;
+}
+
+.inputMsg {
+  /* display: flex;
+  justify-content: center;
+  margin: 0 5%;
+  margin-bottom: 30px; */
+}
+
+.inputTextArea {
+  /* margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px 5px; */
+}
+
+/* Media Queries for smaller devices */
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .message h1,
+  .message h2 {
+    text-align: center;
+  }
+
+  .message h1 {
+    font-size: 40px;
+  }
+  .message h2 {
+    font-size: 12px;
+  }
+  .upscaling-options-bar {
+    flex-direction: column;
+  }
+  .upscale-btn {
+    justify-content: center;
+  }
+
+  .upload-message {
+    text-align: center;
+  }
+
+  .upload-section {
+    width: 80%;
+  }
+
+  .original-image {
+    width: 70%;
+    height: auto;
+  }
+
+  nav {
+    /*flex-direction: column; */
+    gap: 30px;
+  }
+
+  .searchNav {
+    margin-bottom: 100px;
+  }
+}
+
+/* For Ipads and Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .upscaling-options-bar {
+    flex-direction: column;
+  }
+  .upscale-btn {
+    justify-content: center;
+  }
+}

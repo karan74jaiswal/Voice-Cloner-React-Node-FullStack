@@ -1,0 +1,750 @@
+{
+  "version": "4.26.0",
+  "mode": "interface",
+  "app_id": 5.22864282393741e18,
+  "dev_mode": true,
+  "analytics_enabled": true,
+  "components": [
+    {
+      "id": 4,
+      "type": "markdown",
+      "props": {
+        "value": "\u003Ch1 style='text-align: center; margin-bottom: 1rem'\u003EVoice Clone\u003C/h1\u003E",
+        "show_label": true,
+        "rtl": false,
+        "latex_delimiters": [
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ],
+        "visible": true,
+        "elem_classes": [],
+        "sanitize_html": true,
+        "line_breaks": false,
+        "header_links": false,
+        "name": "markdown",
+        "_selectable": false
+      },
+      "skip_api": false,
+      "component_class_id": "0f35515b9a3362b42bb6721c836157a0",
+      "api_info": {
+        "type": "string"
+      },
+      "example_inputs": "# Hello!"
+    },
+    {
+      "id": 5,
+      "type": "markdown",
+      "props": {
+        "value": "by [Tony Assi](https://www.tonyassi.com/)\n\nThis space uses xtts_v2 model. Non-commercial use only. [Coqui Public Model License](https://coqui.ai/cpml)\n\nPlease ❤️ this Space. \u003Ca href=\"mailto: tony.assi.media@gmail.com\"\u003EEmail me\u003C/a\u003E.",
+        "show_label": true,
+        "rtl": false,
+        "latex_delimiters": [
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ],
+        "visible": true,
+        "elem_classes": [],
+        "sanitize_html": true,
+        "line_breaks": false,
+        "header_links": false,
+        "name": "markdown",
+        "_selectable": false
+      },
+      "skip_api": false,
+      "component_class_id": "0f35515b9a3362b42bb6721c836157a0",
+      "api_info": {
+        "type": "string"
+      },
+      "example_inputs": "# Hello!"
+    },
+    {
+      "id": 6,
+      "type": "row",
+      "props": {
+        "variant": "default",
+        "visible": true,
+        "equal_height": false,
+        "name": "row"
+      },
+      "skip_api": true,
+      "component_class_id": "b5cf3d15e2293fb5ccc071d7b8d69f64"
+    },
+    {
+      "id": 7,
+      "type": "column",
+      "props": {
+        "scale": 1,
+        "min_width": 320,
+        "variant": "panel",
+        "visible": true,
+        "name": "column"
+      },
+      "skip_api": true,
+      "component_class_id": "214e3d6261b9edacc5d34ea4e8655821"
+    },
+    {
+      "id": 8,
+      "type": "column",
+      "props": {
+        "scale": 1,
+        "min_width": 320,
+        "variant": "default",
+        "visible": true,
+        "name": "column"
+      },
+      "skip_api": true,
+      "component_class_id": "214e3d6261b9edacc5d34ea4e8655821"
+    },
+    {
+      "id": 0,
+      "type": "textbox",
+      "props": {
+        "lines": 1,
+        "max_lines": 20,
+        "label": "Text",
+        "show_label": true,
+        "container": true,
+        "min_width": 160,
+        "visible": true,
+        "autofocus": false,
+        "autoscroll": true,
+        "elem_classes": [],
+        "type": "text",
+        "rtl": false,
+        "show_copy_button": false,
+        "name": "textbox",
+        "_selectable": false
+      },
+      "skip_api": false,
+      "component_class_id": "d0491bb0fbd427bdb2a4549c4d1ac869",
+      "api_info": {
+        "type": "string"
+      },
+      "example_inputs": "Hello!!"
+    },
+    {
+      "id": 1,
+      "type": "audio",
+      "props": {
+        "streamable": false,
+        "sources": ["upload", "microphone"],
+        "type": "filepath",
+        "label": "Voice reference audio file",
+        "show_label": true,
+        "container": true,
+        "min_width": 160,
+        "visible": true,
+        "streaming": false,
+        "elem_classes": [],
+        "format": "wav",
+        "autoplay": false,
+        "show_share_button": true,
+        "editable": true,
+        "waveform_options": {
+          "waveform_color": null,
+          "waveform_progress_color": null,
+          "trim_region_color": null,
+          "show_recording_waveform": true,
+          "show_controls": false,
+          "skip_length": 5,
+          "sample_rate": 44100
+        },
+        "name": "audio",
+        "_selectable": false
+      },
+      "skip_api": false,
+      "component_class_id": "ddb7efdaf7e0ee9f3d4cb5c3e7657981",
+      "api_info": {
+        "properties": {
+          "path": {
+            "title": "Path",
+            "type": "string"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Url"
+          },
+          "size": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Size"
+          },
+          "orig_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Orig Name"
+          },
+          "mime_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Mime Type"
+          },
+          "is_stream": {
+            "default": false,
+            "title": "Is Stream",
+            "type": "boolean"
+          },
+          "meta": {
+            "default": {
+              "_type": "gradio.FileData"
+            },
+            "title": "Meta",
+            "type": "object"
+          }
+        },
+        "required": ["path"],
+        "title": "FileData",
+        "type": "object"
+      },
+      "example_inputs": {
+        "path": "https://github.com/gradio-app/gradio/raw/main/test/test_files/audio_sample.wav",
+        "meta": {
+          "_type": "gradio.FileData"
+        },
+        "orig_name": "audio_sample.wav",
+        "url": "https://github.com/gradio-app/gradio/raw/main/test/test_files/audio_sample.wav"
+      }
+    },
+    {
+      "id": 9,
+      "type": "form",
+      "props": {
+        "scale": 0,
+        "min_width": 0,
+        "name": "form"
+      },
+      "skip_api": true,
+      "component_class_id": "43cda85c6ff7a5dd8f83d29496b014ee"
+    },
+    {
+      "id": 10,
+      "type": "row",
+      "props": {
+        "variant": "default",
+        "visible": true,
+        "equal_height": true,
+        "name": "row"
+      },
+      "skip_api": true,
+      "component_class_id": "b5cf3d15e2293fb5ccc071d7b8d69f64"
+    },
+    {
+      "id": 11,
+      "type": "button",
+      "props": {
+        "value": "Clear",
+        "variant": "secondary",
+        "visible": true,
+        "interactive": true,
+        "elem_classes": [],
+        "show_api": false,
+        "name": "button",
+        "_selectable": false
+      },
+      "skip_api": true,
+      "component_class_id": "683b6fcca448a942c7223d23f966c51f"
+    },
+    {
+      "id": 12,
+      "type": "button",
+      "props": {
+        "value": "Submit",
+        "variant": "primary",
+        "visible": true,
+        "interactive": true,
+        "elem_classes": [],
+        "name": "button",
+        "_selectable": false
+      },
+      "skip_api": true,
+      "component_class_id": "43ff9969f0bf4553b77ca8dc5b4850bc"
+    },
+    {
+      "id": 13,
+      "type": "column",
+      "props": {
+        "scale": 1,
+        "min_width": 320,
+        "variant": "panel",
+        "visible": true,
+        "name": "column"
+      },
+      "skip_api": true,
+      "component_class_id": "214e3d6261b9edacc5d34ea4e8655821"
+    },
+    {
+      "id": 2,
+      "type": "audio",
+      "props": {
+        "streamable": false,
+        "sources": ["upload", "microphone"],
+        "type": "filepath",
+        "label": "output",
+        "show_label": true,
+        "container": true,
+        "min_width": 160,
+        "interactive": false,
+        "visible": true,
+        "streaming": false,
+        "elem_classes": [],
+        "format": "wav",
+        "autoplay": false,
+        "show_share_button": true,
+        "editable": true,
+        "waveform_options": {
+          "waveform_color": null,
+          "waveform_progress_color": null,
+          "trim_region_color": null,
+          "show_recording_waveform": true,
+          "show_controls": false,
+          "skip_length": 5,
+          "sample_rate": 44100
+        },
+        "name": "audio",
+        "_selectable": false
+      },
+      "skip_api": false,
+      "component_class_id": "ddb7efdaf7e0ee9f3d4cb5c3e7657981",
+      "api_info": {
+        "properties": {
+          "path": {
+            "title": "Path",
+            "type": "string"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Url"
+          },
+          "size": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Size"
+          },
+          "orig_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Orig Name"
+          },
+          "mime_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Mime Type"
+          },
+          "is_stream": {
+            "default": false,
+            "title": "Is Stream",
+            "type": "boolean"
+          },
+          "meta": {
+            "default": {
+              "_type": "gradio.FileData"
+            },
+            "title": "Meta",
+            "type": "object"
+          }
+        },
+        "required": ["path"],
+        "title": "FileData",
+        "type": "object"
+      },
+      "example_inputs": {
+        "path": "https://github.com/gradio-app/gradio/raw/main/test/test_files/audio_sample.wav",
+        "meta": {
+          "_type": "gradio.FileData"
+        },
+        "orig_name": "audio_sample.wav",
+        "url": "https://github.com/gradio-app/gradio/raw/main/test/test_files/audio_sample.wav"
+      }
+    },
+    {
+      "id": 14,
+      "type": "row",
+      "props": {
+        "variant": "default",
+        "visible": true,
+        "equal_height": true,
+        "name": "row"
+      },
+      "skip_api": true,
+      "component_class_id": "b5cf3d15e2293fb5ccc071d7b8d69f64"
+    },
+    {
+      "id": 15,
+      "type": "dataset",
+      "props": {
+        "component_props": [
+          {
+            "lines": 1,
+            "max_lines": 20,
+            "placeholder": null,
+            "label": "Text",
+            "info": null,
+            "show_label": true,
+            "container": true,
+            "scale": null,
+            "min_width": 160,
+            "interactive": null,
+            "visible": true,
+            "elem_id": null,
+            "autofocus": false,
+            "autoscroll": true,
+            "elem_classes": [],
+            "type": "text",
+            "text_align": null,
+            "rtl": false,
+            "show_copy_button": false
+          },
+          {
+            "sources": ["upload", "microphone"],
+            "type": "filepath",
+            "label": "Voice reference audio file",
+            "show_label": true,
+            "container": true,
+            "scale": null,
+            "min_width": 160,
+            "interactive": null,
+            "visible": true,
+            "streaming": false,
+            "elem_id": null,
+            "elem_classes": [],
+            "format": "wav",
+            "autoplay": false,
+            "show_download_button": null,
+            "show_share_button": true,
+            "editable": true,
+            "min_length": null,
+            "max_length": null,
+            "waveform_options": {
+              "waveform_color": null,
+              "waveform_progress_color": null,
+              "trim_region_color": null,
+              "show_recording_waveform": true,
+              "show_controls": false,
+              "skip_length": 5,
+              "sample_rate": 44100
+            }
+          }
+        ],
+        "samples": [
+          [
+            "Hey! It's me Dorthy, from the Wizard of Oz. Type in whatever you'd like me to say.",
+            "Wizard-of-Oz-Dorthy.wav"
+          ],
+          [
+            "It's me Vito Corleone, from the Godfather. Type in whatever you'd like me to say.",
+            "Godfather.wav"
+          ],
+          [
+            "Hey, it's me Paris Hilton. Type in whatever you'd like me to say.",
+            "Paris-Hilton.mp3"
+          ],
+          [
+            "Hey, it's me Megan Fox from Transformers. Type in whatever you'd like me to say.",
+            "Megan-Fox.mp3"
+          ],
+          [
+            "Hey there, it's me Jeff Goldblum. Type in whatever you'd like me to say.",
+            "Jeff-Goldblum.mp3"
+          ],
+          [
+            "Hey there, it's me Heath Ledger as the Joker. Type in whatever you'd like me to say.",
+            "Heath-Ledger.mp3"
+          ]
+        ],
+        "headers": ["Text", "Voice reference audio file"],
+        "type": "index",
+        "samples_per_page": 10,
+        "visible": true,
+        "elem_classes": [],
+        "container": true,
+        "min_width": 160,
+        "name": "dataset",
+        "_selectable": false,
+        "components": ["textbox", "audio"],
+        "component_ids": [0, 1]
+      },
+      "skip_api": false,
+      "component_class_id": "c72c93119b395a3f608fa8223dcae838",
+      "api_info": {
+        "type": "integer",
+        "description": "index of selected example"
+      },
+      "example_inputs": 0
+    }
+  ],
+  "css": null,
+  "js": null,
+  "head": null,
+  "title": "Voice Clone",
+  "space_id": "tonyassi/voice-clone",
+  "enable_queue": true,
+  "show_error": false,
+  "show_api": true,
+  "is_colab": false,
+  "stylesheets": [
+    "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap",
+    "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap"
+  ],
+  "theme": "base",
+  "protocol": "sse_v3",
+  "body_css": {
+    "body_background_fill": "white",
+    "body_text_color": "#1e293b",
+    "body_background_fill_dark": "#0a0f1e",
+    "body_text_color_dark": "#f1f5f9"
+  },
+  "fill_height": false,
+  "layout": {
+    "id": 3,
+    "children": [
+      {
+        "id": 4
+      },
+      {
+        "id": 5
+      },
+      {
+        "id": 6,
+        "children": [
+          {
+            "id": 7,
+            "children": [
+              {
+                "id": 8,
+                "children": [
+                  {
+                    "id": 9,
+                    "children": [
+                      {
+                        "id": 0
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1
+                  }
+                ]
+              },
+              {
+                "id": 10,
+                "children": [
+                  {
+                    "id": 11
+                  },
+                  {
+                    "id": 12
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "children": [
+              {
+                "id": 2
+              },
+              {
+                "id": 14,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "targets": [
+        [12, "click"],
+        [0, "submit"]
+      ],
+      "inputs": [0, 1],
+      "outputs": [2],
+      "backend_fn": true,
+      "js": null,
+      "queue": null,
+      "api_name": "predict",
+      "scroll_to_output": false,
+      "show_progress": "full",
+      "every": null,
+      "batch": false,
+      "max_batch_size": 4,
+      "cancels": [],
+      "types": {
+        "continuous": false,
+        "generator": false
+      },
+      "collects_event_data": false,
+      "trigger_after": null,
+      "trigger_only_on_success": false,
+      "trigger_mode": "once",
+      "show_api": true
+    },
+    {
+      "targets": [[11, "click"]],
+      "inputs": [],
+      "outputs": [0, 1, 2],
+      "backend_fn": false,
+      "js": "() =\u003E [null, null, null]",
+      "queue": false,
+      "api_name": "js_fn",
+      "scroll_to_output": false,
+      "show_progress": "full",
+      "every": null,
+      "batch": false,
+      "max_batch_size": 4,
+      "cancels": [],
+      "types": {
+        "continuous": false,
+        "generator": false
+      },
+      "collects_event_data": false,
+      "trigger_after": null,
+      "trigger_only_on_success": false,
+      "trigger_mode": "once",
+      "show_api": false
+    },
+    {
+      "targets": [[11, "click"]],
+      "inputs": [],
+      "outputs": [8],
+      "backend_fn": false,
+      "js": "() =\u003E [{\"variant\": null, \"visible\": true, \"__type__\": \"update\"}]\n            ",
+      "queue": false,
+      "api_name": "js_fn_1",
+      "scroll_to_output": false,
+      "show_progress": "full",
+      "every": null,
+      "batch": false,
+      "max_batch_size": 4,
+      "cancels": [],
+      "types": {
+        "continuous": false,
+        "generator": false
+      },
+      "collects_event_data": false,
+      "trigger_after": null,
+      "trigger_only_on_success": false,
+      "trigger_mode": "once",
+      "show_api": false
+    },
+    {
+      "targets": [[15, "click"]],
+      "inputs": [15],
+      "outputs": [0, 1],
+      "backend_fn": true,
+      "js": null,
+      "queue": false,
+      "api_name": "load_example",
+      "scroll_to_output": false,
+      "show_progress": "hidden",
+      "every": null,
+      "batch": false,
+      "max_batch_size": 4,
+      "cancels": [],
+      "types": {
+        "continuous": false,
+        "generator": false
+      },
+      "collects_event_data": false,
+      "trigger_after": null,
+      "trigger_only_on_success": false,
+      "trigger_mode": "once",
+      "show_api": false
+    },
+    {
+      "targets": [[null, "then"]],
+      "inputs": [15, 0, 1],
+      "outputs": [2],
+      "backend_fn": true,
+      "js": null,
+      "queue": null,
+      "api_name": "load_example_1",
+      "scroll_to_output": false,
+      "show_progress": "full",
+      "every": null,
+      "batch": false,
+      "max_batch_size": 4,
+      "cancels": [],
+      "types": {
+        "continuous": false,
+        "generator": true
+      },
+      "collects_event_data": false,
+      "trigger_after": 3,
+      "trigger_only_on_success": false,
+      "trigger_mode": "once",
+      "show_api": false
+    }
+  ],
+  "root": "https://tonyassi-voice-clone.hf.space"
+}
